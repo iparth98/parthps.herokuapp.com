@@ -1,0 +1,239 @@
+*{
+  padding: 0px;
+  margin:0px;
+}
+body
+{
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+#bg-img
+ {
+  background-image: url("../image/flip.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  height: 700px;
+}
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-family: 'Arapey', serif;
+  margin: 50px 50px;
+}
+.lg-heading{
+  font-size:3.2em;
+}
+.sm-heading{
+  margin-left: 50px;
+  font-size: 20px;
+}
+.col-sm-11
+{
+  height: 900px;
+}
+h2{
+  font-family: 'Arapey', serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  letter-spacing: -.02em;
+  line-height: 1.15em;
+  text-transform: none;
+}
+.col-md-5
+{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: .01em;
+  line-height: 2em;
+  text-transform: none;
+  color: #222;
+}
+.icon{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 490px;
+}
+.text{
+  text-align: center;
+  margin-top: 70px;
+}
+.text1{
+  font-size: 2.8rem;
+  font-family: 'Arapey', serif;
+}
+.media-link{
+  padding:40px;
+  margin-left: 30px;
+}
+button{
+  width: 100px;
+}
+.foot{
+  background-color: black;
+  display: block;
+  width: 100%;
+  height: 140px;
+  padding: 65px;
+  text-align: center;
+}
+footer a{
+  color: white;
+}
+footer span{
+  color: white;
+}
+.demo {
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #000000;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+#section07 a {
+  padding-top: 80px;
+}
+#section07 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#section07 a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#section07 a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+#section07 a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* small device */
+@media screen and (max-width: 500px){
+  body{
+    overflow-x: hidden;
+  }
+  #bg-img{
+   background-position: 80%;
+  }
+  .top-left{
+    display: none;
+  }
+  #section07 a span {
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .foot{
+    margin-top:50px;
+  }
+  .media-link{
+    font-size:13px;
+  }
+  .navbar-brand{
+    font-family: 'Arapey', serif;
+    font-size: 25px;
+  }
+}
+/* mediam device */
+@media screen and (min-width: 500px) and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  #bg-img{
+    background-position: 80%;
+  }
+  nav{
+    background: #E8E8E8;
+    z-index: 1;
+    font-family: 'Arapey', serif;
+    font-size: 30px;
+  }
+  .top-left{
+    display: none;
+  }
+  .container
+  {
+    padding-top: 40px;
+  }
+  .container{
+    margin-top: 180px;
+  }
+  .footer{
+   padding: 40px
+  }
+  footer a{
+    color:white;
+  }
+  #section07 a span {
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+}
+/* large divice */
+@media screen and (min-width:769px) and (max-width: 1170px){
+  .navbar-brand{
+    display: none;
+  }
+  #bg-img{
+    background-position: 80%;
+  }
+
+
+}
+/* extra-large device */
+@media screen and (min-width: 1170px){
+  .navbar-brand{
+    display: none;
+  }
+}
